@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+    	function real(num) {
+    		var real = parseInt(num);
+    		if (isNaN(real) || real < 1 || real > 9) {
+    			alert("그거아님");
+    			return;
+    		}
+    		for (i=9; real<=i; real++) {
+    			for (j=1; j<=9;j++) {
+    				document.write(real*j+"<br>");
+    			}
+    		document.write("<hr>");
+    		}
+    	}
+    </script>
+</head>
+<body>
+    <script type="text/javascript">
+    	var num = prompt("입력하시오","");
+    	real(num);
+    </script>
+</body>
+</html>
